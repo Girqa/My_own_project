@@ -1,0 +1,129 @@
+
+.App {
+  width: 100%;
+  background-color: #012;
+  background-image: url(./Images/backGround.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/*menu */
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+.dws-menu ul,
+.dws-menu ol{
+  list-style: none;
+}
+
+.dws-menu *{
+  margin: 0;
+  padding: 0;
+
+}
+
+.dws-menu > ul{
+  display: flex;
+  justify-content: left;
+
+}
+
+.dws-menu > ul li a{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding: 15px 30px 15px 40px;
+  font-size: 14px;
+  color: #aaffaa;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #aff;
+  box-shadow: 0px 1px #aff;
+  background-color: #02354555;
+}
+
+
+.dws-menu > ul li:last-child{
+  border-right: 1px solid #aff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dws-menu li a{
+  border-radius: 20px;
+}
+.dws-menu li a:hover{
+  background-color: #4682B4;
+  box-shadow: 1px 5px 10px -5px #FFFAFA;
+  transition: all 0.4s ease;
+}
+
+
+/* body */
+
+.content{
+  padding: 30px;
+}
+
+.toDoList{
+  display: flex;
+  margin-top: 5rem;
+}
+
+.flexItems ol li::before
+{
+  content: '✎';
+}
+
+.serials{
+  color: #ffa;
+  padding:4px;
+  border-radius: 10px;
+  white-space: pre-line;
+  float: left;
+}
+
+.serials:hover {
+  background-color: #4682B4;
+  box-shadow: 1px 5px 10px -5px #FFFAFA,
+  -1px -5px 10px -5px #FFFAFA;
+  transition: all 0.4s ease;
+}
+
+button{
+  border-radius: 10px;
+  border: 1.5px solid #358;
+  background: #33353377;
+  color: #ffa;
+}
+
+button:active, button:focus{
+  border-radius: 10px;
+  border: 2px solid #aaf;
+}
+
+button:hover{
+  box-shadow: 0.8px 0.8px 0.5px 1px #358,
+  -0.8px -0.8px 1px 0.5px #358;
+  transition: all 0.4s ease;
+}
+
+.inpTask{
+  border-radius: 5px;
+  border: 0.5px solid #FFFAFA; 
+  background:#ccc;
+  width: 300px;
+}
+.inputStr{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
