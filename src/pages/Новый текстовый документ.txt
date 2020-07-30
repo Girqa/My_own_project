@@ -1,0 +1,22 @@
+h1{
+	text-align: center;
+	color: #fc0fc0;
+	font-family: Georgia;
+	font-style: italic;
+}
+
+.galery{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between
+}
+
+.galery img{
+	width: 45%;
+	margin-bottom: 6%;
+	margin-right: 4%;
+}

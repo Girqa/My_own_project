@@ -32,7 +32,7 @@ render(){
 		return(
 			<form className="inputStr"onSubmit={this.addItem}>
 				<input className="inpTask" value={input} placeholder="Input" onChange={this.handlerChange}></input>
-				<button type="submit">Add film/serial</button>
+				<button className="add-button" type="submit">Add</button>
 			</form>
 		);}
 }

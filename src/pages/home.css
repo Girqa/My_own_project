@@ -1,0 +1,123 @@
+/*.........
+Content
+..........*/
+.content{
+  min-height: 70vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.toDoList{
+  margin-bottom: 3%;
+  background: #4A69FFaa;
+  border-radius: 15px;
+  border: 2px solid #3a55FF;
+  display: flex;
+}
+@media (max-width: 900px){
+  .toDoList{
+    flex-direction: column;
+    margin-right: 15%;
+  }
+}
+
+@media (min-width: 900px){
+  .toDoList{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+}
+
+.toDoList:hover {
+  background-color: #4682B4;
+  box-shadow: 1px 5px 10px -5px #FFFAFA,
+  -1px -5px 10px -5px #FFFAFA;
+  transition: all 0.4s ease;
+}
+
+.serials{
+  color: #ffa;
+  white-space: pre-line;
+  overflow: hidden;
+}
+
+.del-button{
+  height: 5vh; 
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+}
+.content ol li::before
+{
+  content: '✎';
+}
+
+button{
+  border-radius: 10px;
+  border: 1.5px solid #358;
+  background: #33353377;
+  color: #ffa;
+}
+
+button:active, button:focus{
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+button:hover{
+  box-shadow: 0.8px 0.8px 0.5px 1px #358,
+  -0.8px -0.8px 1px 0.5px #358;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 900px){
+
+  .inputStr{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inpTask{
+    height: 6vh;
+    width: 78%;
+    border-radius: 5px;
+    border: 0.5px solid #FFFAFA; 
+    background:#ccc;
+  }
+
+  .add-button{
+    width: 20%;
+  }
+}
+
+@media (min-width: 900px){
+  .inputStr{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inpTask{
+    flex-basis: 80%;
+    border-radius: 10px;
+    border: 0.5px solid #FFFAFA; 
+    background:#ccc;
+    transition: box-shadow 0.8s ease;
+  }
+
+  .inpTask:hover{
+    box-shadow: 1px 1px 1px 1px #FFFAFA;
+      }
+
+  .add-button{
+    flex-basis: 17%;
+  }
+
+}

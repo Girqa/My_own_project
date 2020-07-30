@@ -1,11 +1,9 @@
 import React from 'react';
-import './App.css';
-import Serials from "./components/serials";
-import InputSerial from "./components/inputSerial";
+import Serials from "../components/serials";
+import InputSerial from "../components/inputSerial";
+import "./home.css";
 
-import Header from "./components/header";
-
-class App extends React.Component {
+class Home extends React.Component {
 	constructor(){
 		super()
 
@@ -39,11 +37,22 @@ class App extends React.Component {
 	render(){
 		const {items} = this.state;
   		return (
-  		  <div className="App">
-  		    <Header/>
-  		  </div>
-  		);
-	}
-}
-
-export default App;
+  			<>
+   		  	<div className="content">
+  		  		<ol>
+  		  			{items.map ((item, index) => (
+  		  					<Serials
+  		  					item = {item}
+  		  					id = {index}
+  		  					delItem = {() => this.delItem(index)}
+  		  					/>
+  		  				))}
+  		  		</ol>
+  		  	</div>
+        	<InputSerial addItem={this.addItem} />
+  		  	<a href="B:\Sublime Text 3\React\App2\src\note.png" title="B:\Sublime Text 3\React\App2\src\note.png">НапоминалОчка</a>
+  			</>
+  			);
+  		}
+  	}
+ export default Home;
